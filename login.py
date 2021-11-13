@@ -2,13 +2,17 @@ import sqlite3
 import tkinter
 from tkinter import messagebox
 
+# run the sql logic from sqlite3
+
 
 def login():
 
+    # connect to sqlite3
     db = sqlite3.connect('login.sqlite')
+    # Create a user
     db.execute('CREATE TABLE IF NOT EXISTS login(username TEXT, password TEXT)')
-    # db.execute("INSERT INTO login(username, password) VALUES('admin', 'admin')")
-    db.execute("INSERT INTO login(username, password) VALUES('user', 'admin')")
+    db.execute("INSERT INTO login(username, password) VALUES('zach', 'rochette')")
+    #db.execute("INSERT INTO login(username, password) VALUES('ryan', 'reynolds')")
     cursor = db.cursor()
     cursor.execute("SELECT * FROM login where username=? AND password=?",
                    (userinput.get(), pass_input.get()))
@@ -24,6 +28,7 @@ def login():
     db.close()
 
 
+# Design the login menu
 main_window = tkinter.Tk()
 main_window.title('Login')
 main_window.geometry('400x300')
