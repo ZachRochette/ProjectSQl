@@ -1,38 +1,31 @@
 # Overview
 
-{changed! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+In this project I am taking my first look at SQL relational databases. I use python, tkinter, and sqlite3 to create a very simple login. This was my first time ever messing with tkinter, and sqlite3 and databases in general. The purpose of this project was to serve as an introduction to the world of databases. I have a lot to learn about them and I learned a lot while doing this small project. 
 
-{Provide a description the software that you wrote and how it integrates with a SQL Relational Database. Describe how to use your program.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/namVfPblZLk)
 
 # Relational Database
 
-{Describe the relational database you are using.}
-
-{Describe the structure (tables) of the relational database that you created.}
+I used SQLite which is a relational database management system, or (RDBMS) 
+Tkinter creates the login window, and sqlite3 and python allow us to enter our credentials and login to our non existing page. 
+I created a table that stores usernames, and passwords.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+- Visual Studio Code
+- Python
+- Tkinter
+- SQlite3
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [w3schools](https://www.w3schools.com/)
+- [stackoverflow](https://stackoverflow.com/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+There are many things I would like to implement in this project
 
-- Item 1
-- Item 2
-- Item 3
+- A register page
+- Put it on the web and use webpages to display everything instead of Tkinter
+- Let the user enter their login credentials instead of having to enter them directly into the database using an SQL statement
